@@ -29,20 +29,20 @@
         private void InitializeComponent()
         {
             this.clear = new System.Windows.Forms.Button();
-            this.cm = new System.Windows.Forms.Label();
-            this.m = new System.Windows.Forms.Label();
-            this.km = new System.Windows.Forms.Label();
-            this.inch = new System.Windows.Forms.Label();
-            this.ft = new System.Windows.Forms.Label();
-            this.yard = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.cm1 = new System.Windows.Forms.Label();
+            this.m1 = new System.Windows.Forms.Label();
+            this.km1 = new System.Windows.Forms.Label();
+            this.inch1 = new System.Windows.Forms.Label();
+            this.ft1 = new System.Windows.Forms.Label();
+            this.yard1 = new System.Windows.Forms.Label();
+            this.cm = new System.Windows.Forms.TextBox();
+            this.m = new System.Windows.Forms.TextBox();
+            this.km = new System.Windows.Forms.TextBox();
+            this.inch = new System.Windows.Forms.TextBox();
+            this.ft = new System.Windows.Forms.TextBox();
+            this.yard = new System.Windows.Forms.TextBox();
+            this.www = new System.Windows.Forms.Label();
+            this.explanationTextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // clear
@@ -53,138 +53,145 @@
             this.clear.TabIndex = 0;
             this.clear.Text = "清除";
             this.clear.UseVisualStyleBackColor = true;
+            this.clear.Click += new System.EventHandler(this.BtnClear_Click);
+            // 
+            // cm1
+            // 
+            this.cm1.AutoSize = true;
+            this.cm1.Location = new System.Drawing.Point(55, 99);
+            this.cm1.Name = "cm1";
+            this.cm1.Size = new System.Drawing.Size(37, 15);
+            this.cm1.TabIndex = 1;
+            this.cm1.Text = "公分";
+            // 
+            // m1
+            // 
+            this.m1.AutoSize = true;
+            this.m1.Location = new System.Drawing.Point(144, 99);
+            this.m1.Name = "m1";
+            this.m1.Size = new System.Drawing.Size(37, 15);
+            this.m1.TabIndex = 2;
+            this.m1.Text = "公尺";
+            // 
+            // km1
+            // 
+            this.km1.AutoSize = true;
+            this.km1.Location = new System.Drawing.Point(241, 99);
+            this.km1.Name = "km1";
+            this.km1.Size = new System.Drawing.Size(37, 15);
+            this.km1.TabIndex = 3;
+            this.km1.Text = "公里";
+            // 
+            // inch1
+            // 
+            this.inch1.AutoSize = true;
+            this.inch1.Location = new System.Drawing.Point(55, 170);
+            this.inch1.Name = "inch1";
+            this.inch1.Size = new System.Drawing.Size(37, 15);
+            this.inch1.TabIndex = 4;
+            this.inch1.Text = "英吋";
+            // 
+            // ft1
+            // 
+            this.ft1.AutoSize = true;
+            this.ft1.Location = new System.Drawing.Point(144, 170);
+            this.ft1.Name = "ft1";
+            this.ft1.Size = new System.Drawing.Size(37, 15);
+            this.ft1.TabIndex = 5;
+            this.ft1.Text = "英尺";
+            // 
+            // yard1
+            // 
+            this.yard1.AutoSize = true;
+            this.yard1.Location = new System.Drawing.Point(241, 170);
+            this.yard1.Name = "yard1";
+            this.yard1.Size = new System.Drawing.Size(37, 15);
+            this.yard1.TabIndex = 6;
+            this.yard1.Text = "英碼";
             // 
             // cm
             // 
-            this.cm.AutoSize = true;
-            this.cm.Location = new System.Drawing.Point(55, 99);
+            this.cm.Location = new System.Drawing.Point(56, 117);
             this.cm.Name = "cm";
-            this.cm.Size = new System.Drawing.Size(37, 15);
-            this.cm.TabIndex = 1;
-            this.cm.Text = "公分";
+            this.cm.Size = new System.Drawing.Size(76, 25);
+            this.cm.TabIndex = 7;
+            this.cm.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Cm_KeyUp);
             // 
             // m
             // 
-            this.m.AutoSize = true;
-            this.m.Location = new System.Drawing.Point(144, 99);
+            this.m.Location = new System.Drawing.Point(147, 117);
             this.m.Name = "m";
-            this.m.Size = new System.Drawing.Size(37, 15);
-            this.m.TabIndex = 2;
-            this.m.Text = "公尺";
+            this.m.Size = new System.Drawing.Size(76, 25);
+            this.m.TabIndex = 8;
+            this.m.KeyUp += new System.Windows.Forms.KeyEventHandler(this.W_KeyUp);
             // 
             // km
             // 
-            this.km.AutoSize = true;
-            this.km.Location = new System.Drawing.Point(241, 99);
+            this.km.Location = new System.Drawing.Point(244, 117);
             this.km.Name = "km";
-            this.km.Size = new System.Drawing.Size(37, 15);
-            this.km.TabIndex = 3;
-            this.km.Text = "公里";
+            this.km.Size = new System.Drawing.Size(76, 25);
+            this.km.TabIndex = 9;
+            this.km.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Km_KeyUp);
             // 
             // inch
             // 
-            this.inch.AutoSize = true;
-            this.inch.Location = new System.Drawing.Point(55, 170);
+            this.inch.Location = new System.Drawing.Point(56, 188);
             this.inch.Name = "inch";
-            this.inch.Size = new System.Drawing.Size(37, 15);
-            this.inch.TabIndex = 4;
-            this.inch.Text = "英吋";
+            this.inch.Size = new System.Drawing.Size(76, 25);
+            this.inch.TabIndex = 10;
+            this.inch.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Inch_KeyUp);
             // 
             // ft
             // 
-            this.ft.AutoSize = true;
-            this.ft.Location = new System.Drawing.Point(144, 170);
+            this.ft.Location = new System.Drawing.Point(147, 188);
             this.ft.Name = "ft";
-            this.ft.Size = new System.Drawing.Size(37, 15);
-            this.ft.TabIndex = 5;
-            this.ft.Text = "英尺";
+            this.ft.Size = new System.Drawing.Size(76, 25);
+            this.ft.TabIndex = 11;
+            this.ft.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Ft_KeyUp);
             // 
             // yard
             // 
-            this.yard.AutoSize = true;
-            this.yard.Location = new System.Drawing.Point(241, 170);
+            this.yard.Location = new System.Drawing.Point(244, 188);
             this.yard.Name = "yard";
-            this.yard.Size = new System.Drawing.Size(37, 15);
-            this.yard.TabIndex = 6;
-            this.yard.Text = "英碼";
+            this.yard.Size = new System.Drawing.Size(76, 25);
+            this.yard.TabIndex = 12;
+            this.yard.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Yard_KeyUp);
             // 
-            // textBox1
+            // www
             // 
-            this.textBox1.Location = new System.Drawing.Point(56, 117);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(76, 25);
-            this.textBox1.TabIndex = 7;
+            this.www.AutoSize = true;
+            this.www.Location = new System.Drawing.Point(55, 247);
+            this.www.Name = "www";
+            this.www.Size = new System.Drawing.Size(67, 15);
+            this.www.TabIndex = 13;
+            this.www.Text = "說明文字";
             // 
-            // textBox2
+            // explanationTextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(147, 117);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(76, 25);
-            this.textBox2.TabIndex = 8;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(244, 117);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(76, 25);
-            this.textBox3.TabIndex = 9;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(56, 188);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(76, 25);
-            this.textBox4.TabIndex = 10;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(147, 188);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(76, 25);
-            this.textBox5.TabIndex = 11;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(244, 188);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(76, 25);
-            this.textBox6.TabIndex = 12;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(55, 247);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 15);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "說明文字";
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(56, 265);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(164, 25);
-            this.textBox7.TabIndex = 14;
+            this.explanationTextBox.Location = new System.Drawing.Point(56, 265);
+            this.explanationTextBox.Name = "explanationTextBox";
+            this.explanationTextBox.Size = new System.Drawing.Size(164, 25);
+            this.explanationTextBox.TabIndex = 14;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.explanationTextBox);
+            this.Controls.Add(this.www);
             this.Controls.Add(this.yard);
             this.Controls.Add(this.ft);
             this.Controls.Add(this.inch);
             this.Controls.Add(this.km);
             this.Controls.Add(this.m);
             this.Controls.Add(this.cm);
+            this.Controls.Add(this.yard1);
+            this.Controls.Add(this.ft1);
+            this.Controls.Add(this.inch1);
+            this.Controls.Add(this.km1);
+            this.Controls.Add(this.m1);
+            this.Controls.Add(this.cm1);
             this.Controls.Add(this.clear);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -196,20 +203,22 @@
         #endregion
 
         private System.Windows.Forms.Button clear;
-        private System.Windows.Forms.Label cm;
-        private System.Windows.Forms.Label m;
-        private System.Windows.Forms.Label km;
-        private System.Windows.Forms.Label inch;
-        private System.Windows.Forms.Label ft;
-        private System.Windows.Forms.Label yard;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.Label cm1;
+        private System.Windows.Forms.Label m1;
+        private System.Windows.Forms.Label km1;
+        private System.Windows.Forms.Label inch1;
+        private System.Windows.Forms.Label ft1;
+        private System.Windows.Forms.Label yard1;
+        private System.Windows.Forms.TextBox cm;
+        private System.Windows.Forms.TextBox m;
+        private System.Windows.Forms.TextBox km;
+        private System.Windows.Forms.TextBox inch;
+        private System.Windows.Forms.TextBox ft;
+        private System.Windows.Forms.TextBox yard;
+        private System.Windows.Forms.Label www;
+        private System.Windows.Forms.TextBox explanationTextBox;
+        private System.Windows.Forms.TextBox sourceTextBox;
+
     }
 }
 
